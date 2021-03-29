@@ -1,5 +1,42 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Architects Daughter', cursive;
+}
+
+button {
+  background-color: #1a73e8;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  border: 0;
+  font-family: 'Architects Daughter', cursive;
+  margin: 30px;
+}
+
+.Header button {
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
 .App {
   text-align: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.App.Dark {
+  background-color: black;
+}
+
+.Dark h1, .Dark h2, .Dark h3, .Dark small {
+  color: white;
+}
+
+.Dark .Character {
+  background-color: rgb(29, 29, 29);
 }
 
 .App-logo {
@@ -35,4 +72,55 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.CharactersList {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(100px,1fr));
+  grid-gap: 20px;
+}
+
+.Character {
+  border-radius: 10px;
+  border: 1px solid #dadada;
+  font-family: 'Architects Daughter', cursive;
+  padding-bottom: 10px;
+}
+
+.Character img {
+  width: 100%;
+  padding: 20px 20px 0;
+  box-sizing: border-box;
+  border-radius: 100%;
+}
+
+.Character h3 {
+  margin: 0 10px 0;
+}
+
+.Favorites {
+  border-radius: 10px;
+  max-width: 400px;
+  position: fixed;
+  padding: 0 30px 15px;
+  top: 0;
+  left: 0;
+  border: 1px solid #dadada;
+  background-color: white;
+  max-height: 150px;
+  overflow: auto;
+
+}
+
+.Favorites {
+  margin: 0;
+}
+
+.Favorites li {
+  margin: 0 10px;
+  text-align: left;
+}
+
+h5 {
+  margin: 0;
 }
